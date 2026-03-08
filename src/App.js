@@ -182,7 +182,9 @@ export default function App() {
   useEffect(() => {
     if (tab === "monthly") fetchMonthly();
     if (tab === "ytd") fetchYTD();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tab, month, year]);
+```
 
   async function fetchMonthly() {
   setLoading(true);
